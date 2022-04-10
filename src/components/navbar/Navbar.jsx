@@ -11,7 +11,7 @@ const Navbar = () => {
     <Nav>
       <Logo to="/home" >
         <i>{"<BETUL>"}</i>
-        <span>/recipe</span>
+        <span>/Recipe</span>
       </Logo>
       <Hamburger onClick={()=>setIsOpen(!isOpen)}>
         {/* <span/>
@@ -20,9 +20,9 @@ const Navbar = () => {
         <GiHamburgerMenu onClick={()=>setIsOpen(!isOpen)}/>
       </Hamburger>
       <Menu osman={isOpen}>
-        <MenuLink to="/about" onClick={()=>setIsOpen(!isOpen)}>About</MenuLink>
-        <MenuLink to="/github" onClick={()=>setIsOpen(!isOpen)}>Gıthub</MenuLink>
-        <MenuLink to="/" onClick={()=>setIsOpen(!isOpen)}>Logout</MenuLink>
+        <MenuLink to="/about"  onClick={()=>setIsOpen(!isOpen)}>About</MenuLink>
+        <a href="https://github.com/betulsmanav" onClick={()=>setIsOpen(!isOpen)}>Gıthub</a>
+        <MenuLink to="/" onMouseUp={()=>sessionStorage.clear()} onClick={()=>setIsOpen(!isOpen)}>Logout</MenuLink>
       </Menu>
 
 
