@@ -6,9 +6,11 @@ import {RecipeCard, RecipeHeader, RecipeImage,Button} from './HomeStyles'
 
 const RecipeCardComp = ({ karsilamaRecipe }) => {
   const navigate = useNavigate();
+
   const moreClick = () => {
     navigate("/details",{state:{karsilamaRecipe}})
   }
+  console.log(karsilamaRecipe);
  
 
   return (
